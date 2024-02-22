@@ -1,2 +1,4 @@
 nltk==3.8.1
 pandas==2.0.3
+matplotlib~=3.8.3
+cleantext~=1.1.4

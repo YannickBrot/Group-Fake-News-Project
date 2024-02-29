@@ -1,6 +1,8 @@
 import pandas as pd
 import nltk
 from nltk.corpus import stopwords
+from sklearn.model_selection import train_test_split
+
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -84,5 +86,3 @@ def split_dataset(df, test_size=0.1, random_state=42):
     train, val = train_test_split(train_val, test_size=test_size/(1-test_size), random_state=random_state)
     
     return train, val, test
-
-

@@ -71,3 +71,18 @@ plt.xticks(rotation=45, ha='right')
 plt.tight_layout() # Prevent labels from overlapping
 
 plt.show()
+
+
+def split_dataset(df, test_size=0.1, random_state=42):
+    """
+    Split the dataset into training, validation, and test sets.
+    """
+    # Split into train+val and test
+    train_val, test = train_test_split(df, test_size=test_size, random_state=random_state)
+    
+    # Split train+val into train and val
+    train, val = train_test_split(train_val, test_size=test_size/(1-test_size), random_state=random_state)
+    
+    return train, val, test
+
+

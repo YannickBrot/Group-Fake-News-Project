@@ -158,6 +158,7 @@ cython_debug/
 *.keras
 *.png
 *.jpg
+glove.6B.100d.txt
 liar_dataset
 
 # PyCharm

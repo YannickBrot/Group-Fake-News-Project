@@ -1,5 +1,11 @@
-nltk==3.8.1
-pandas==2.0.3
-matplotlib~=3.8.3
-cleantext~=1.1.4
-scikit-learn~=1.4.1.post1
+clean-text==0.6.0
+matplotlib
+pandas
+nltk
+scikit-learn
+joblib
+numpy
+tqdm
+scipy
+tensorflow==2.16.1
+regex
